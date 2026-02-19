@@ -17,4 +17,10 @@ img {
   max-width: 800px;
 }
 
+footer {
+  text-align: right;
+  color: gray;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
 
