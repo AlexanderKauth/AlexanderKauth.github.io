@@ -1,19 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alexander Kauth</title>
 
   <style>
     body {
+      margin: 0;
+      height: 100vh;
       background: linear-gradient(135deg, #1f2937, #111827);
       color: white;
       font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       text-align: center;
-      padding-top: 100px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Hintergrund-Datenbankbild */
+    body::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 450px;
+      height: 450px;
+      background: url("database.png") no-repeat center;
+      background-size: contain;
+      opacity: 0.06;
+      transform: translate(-50%, -50%);
+      z-index: 0;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
     }
 
     h1 {
       font-size: 3rem;
+      margin-bottom: 10px;
       color: #38bdf8;
     }
 
@@ -23,23 +52,25 @@
     }
 
     .box {
-      margin-top: 40px;
-      padding: 20px;
-      background-color: rgba(255, 255, 255, 0.1);
+      margin-top: 30px;
+      padding: 20px 40px;
+      background-color: rgba(255, 255, 255, 0.08);
       border-radius: 12px;
-      display: inline-block;
+      backdrop-filter: blur(5px);
     }
   </style>
 </head>
 
 <body>
-  <h1>Alexander Kauth</h1>
 
-  <div class="box">
-    <p>Business Information Systems</p>
-    <p>Database Operations | Automation | CI/CD</p>
+  <div class="content">
+    <h1>Alexander Kauth</h1>
+
+    <div class="box">
+      <p>Business Information Systems</p>
+      <p>Database Operations | Automation | CI/CD</p>
+    </div>
   </div>
+
 </body>
 </html>
-
-
