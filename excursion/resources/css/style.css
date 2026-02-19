@@ -1,12 +1,17 @@
 body {
   background-color: black;
-  color: white;
   text-align: center;
   font-family: Arial, sans-serif;
+  color: white;
 }
 
 h1 {
   font-size: 50px;
+}
+
+h2 {
+  font-size: 42px;
+  font-weight: 300;
 }
 
 a {
@@ -14,11 +19,14 @@ a {
   font-size: 16px;
 }
 
-video {
-  margin-top: 20px;
-}
-
 img {
   margin-top: 20px;
 }
+
+.footer {
+  color: gray;
+  font-size: 16px;
+  margin-top: 40px;
+}
+
 
